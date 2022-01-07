@@ -9,10 +9,10 @@ import {
 	siteTitle,
 } from './layout.module.css';
 
-// const Layout = ({pageTitle, children}) => {
-const Layout = (props) => {
-	const pageTitle = props.pageTitle;
-	const children = props.children;
+const Layout = ({ pageTitle, children }) => {
+	// const Layout = (props) => {
+	// 	const pageTitle = props.pageTitle;
+	// 	const children = props.children;
 
 	const data = useStaticQuery(graphql`
 		query {
