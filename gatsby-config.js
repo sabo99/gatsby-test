@@ -1,7 +1,17 @@
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "GatsbyJS-Test",
-  },
-  plugins: [],
+	siteMetadata: {
+		siteUrl: 'https://www.yourdomain.tld',
+		title: 'GatsbyJS-Test',
+	},
+	plugins: [
+		'gatsby-plugin-image',
+		'gatsby-plugin-sharp',
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: `blog`,
+				path: `${__dirname}/blog`,
+			},
+		},
+	],
 };
